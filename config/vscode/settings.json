@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Slime",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontFamily": "Fira Code",
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.minimap.enabled": false
+}
