@@ -11,7 +11,7 @@
 sudo apt install arc-theme
 ```
 ```
-sudo add-apt-repository ppa:snwh/ppa
+sudo add-apt-repository ppa:snwh/ppa && sudo apt update
 sudo apt install paper-icon-theme
 ```
 
