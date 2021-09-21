@@ -56,7 +56,11 @@ sudo dpkg -i vscode.deb
 ```
 
 ```
-sudo apt install python3.9 python3-pip haskell-platform git vim
+sudo apt install python3.9 haskell-platform git vim
+```
+
+```
+curl -sSL https://bootstrap.pypa.io/get-pip.py | python3.9
 ```
 
 ```
