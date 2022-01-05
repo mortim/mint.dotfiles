@@ -71,7 +71,7 @@ curl -sSL https://get.haskellstack.org/ | sh
 
 ## Config
 
-The configurations are available [here](here).
+The configurations are available [here](https://github.com/mortim/dotfiles/tree/master/config).
 
 #### Hide the password
 ```
