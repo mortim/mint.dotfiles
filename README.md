@@ -1,79 +1,72 @@
-# dotfiles
+# mint.dotfiles
 
-### Installation
----
+mint + xfce4
 
-##### Theme
-- Arc (Dark)
-- Paper (Icon)
+### Theme
+**DE/WM**
 
 ```
-sudo apt install arc-theme
-```
-```
-sudo add-apt-repository ppa:snwh/ppa && sudo apt update
-sudo apt install paper-icon-theme
-```
-
-##### Typography
-```
-sudo apt install fonts-firacode
-```
-
-##### Packages
-*pre-installed: libreoffice, firefox*
-
-(Desktop)
-**For virtualbox package, DISABLE the secure boot**
-```
-sudo apt install redshift vlc gimp virtualbox neofetch
-```
-[Discord](https://discord.com/) and [Hakuneko](https://github.com/manga-download/hakuneko/releases/tag/v6.1.7) packages are installed with a deb file.
-```
-sudo dpkg -i discord.deb
-sudo dpkg -i hakuneko.deb
-``` 
-
-(OBS Studio)
-```
-sudo apt install ffmpeg
-sudo add-apt-repository ppa:obsproject/obs-studio
-sudo apt update
-sudo apt install obs-studio
-```
-
-(Games)
-```
-sudo add-apt-repository ppa:lutris-team/lutris
-sudo apt install lutris
-sudo apt install steam
-```
-
-(Dev)
-[VS Code](https://code.visualstudio.com/) package is installed with a deb file.
-```
-sudo dpkg -i vscode.deb
+$ apt install -y git arc-theme
 ```
 
 ```
-sudo apt install python3.9 haskell-platform git vim
+$ xfconf-query -c xsettings -p /Net/ThemeName -s Arc-Dark
+$ xfconf-query -c xfwm4 -p /general/theme -s Arc-Dark
+```
+
+**Icon**
+
+```
+$ sudo add-apt-repository -y ppa:papirus/papirus && apt update
+$ apt install -y papirus-icon-theme
 ```
 
 ```
-curl -sSL https://bootstrap.pypa.io/get-pip.py | python3.9
+$ xfconf-query -c xsettings -p /Net/IconThemeName -s ePapirus-Dark
+```
+
+**Font**
+```
+$ apt install -y fonts-firacode
+```
+
+(check the [VSCode](config/vscode/settings.json) configuration)
+
+### Packages
+```
+$ apt install -y neofetch git vim wget curl
+```
+
+- [VSCode](https://code.visualstudio.com/) package (with the dpkg package manager)
+- [Haskell](https://www.haskell.org/ghcup/) package
+- OpenJDK
+
+
+### Shell configuration
+```
+$ cd ~
 ```
 
 ```
-curl -sSL https://get.haskellstack.org/ | sh
+$ echo -e "\n\nexport PATH=$HOME/.local/bin:$PATH" >> .bashrc
 ```
 
 ---
 
-## Config
+**(for cs studies)**
 
-The configurations are available [here](https://github.com/mortim/dotfiles/tree/master/config).
-
-#### Hide the password
 ```
-rm - /etc/sudoers.d/Opwfeedback
+$ wget https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/programs/program.jar -P Workspace/iut/
+```
+
+---
+
+```
+$ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/bash/.bash_aliases > .bash_aliases
+$ source .bash_aliases
+```
+
+```
+$ wget https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/ghci/.ghci
+$ chmod go-w .ghci
 ```

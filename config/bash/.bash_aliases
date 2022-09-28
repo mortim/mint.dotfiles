@@ -1,2 +1,2 @@
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.cabal/bin:$PATH
+alias ijavac="javac -cp ~/Workspace/iut/program.jar "
+alias ijava="java -cp ~/Workspace/iut/program.jar: "
