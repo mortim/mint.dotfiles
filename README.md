@@ -25,6 +25,14 @@ $ apt install -y papirus-icon-theme
 $ xfconf-query -c xsettings -p /Net/IconThemeName -s ePapirus-Dark
 ```
 
+**Desktop**
+Wallpaper link [here](https://www.xfce-look.org/p/1483687)
+
+```
+$ mv 'XFCE 94 With Logo.png' ~/Pictures/wallpaper.png
+$ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP/workspace0/last-image -s ~/Pictures/wallpaper.png
+```
+
 **Font**
 ```
 $ apt install -y fonts-firacode
@@ -34,12 +42,19 @@ $ apt install -y fonts-firacode
 
 ### Packages
 ```
-$ apt install -y neofetch git vim wget curl
+$ apt install -y neofetch git vim wget curl virtualbox steam feh
 ```
 
 - [VSCode](https://code.visualstudio.com/) package (with the dpkg package manager)
 - [Haskell](https://www.haskell.org/ghcup/) package
 - OpenJDK
+
+### VPN
+```
+$ wget https://infotuto.univ-lille.fr/fileadmin/user_upload/infotuto/images/DSI/Fichiers_telechargeables/Clients_VPN/ULILLE_VPN_ETUDIANT_Linux_v4_2.zip
+$ unzip ULILLE_VPN_ETUDIANT_Linux_v4_2.zip
+$ nmcli connection import type openvpn file ULILLE_VPN_ETU_TCP_v4_Linux.ovpn
+```
 
 
 ### Shell configuration
@@ -51,20 +66,15 @@ $ cd ~
 $ echo -e "\n\nexport PATH=$HOME/.local/bin:$PATH" >> .bashrc
 ```
 
----
-
-**(for cs studies)**
+**iJava**
 
 ```
-$ wget https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/programs/program.jar -P Workspace/iut/
-```
-
----
-
-```
+$ wget https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/lib/program.jar -P Workspace/iut/lib
 $ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/bash/.bash_aliases > .bash_aliases
 $ source .bash_aliases
 ```
+
+**Ghci**
 
 ```
 $ wget https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/ghci/.ghci
