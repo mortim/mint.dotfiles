@@ -2,6 +2,11 @@
 
 mint + xfce4
 
+**Pre-requisites**
+```
+apt install wget curl
+```
+
 ### Theme
 **DE/WM**
 
@@ -26,11 +31,12 @@ $ xfconf-query -c xsettings -p /Net/IconThemeName -s ePapirus-Dark
 ```
 
 **Desktop**
+
 Wallpaper link [here](https://www.xfce-look.org/p/1483687)
 
 ```
 $ mv 'XFCE 94 With Logo.png' ~/Pictures/wallpaper.png
-$ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP/workspace0/last-image -s ~/Pictures/wallpaper.png
+$ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor$(xrandr --listmonitors | grep "+" | awk {'print $4'})/workspace0/last-image -s ~/Pictures/wallpaper.png
 ```
 
 **Font**
@@ -38,19 +44,22 @@ $ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP/workspace0/last-
 $ apt install -y fonts-firacode
 ```
 
+---
+
+### Packages
+```
+$ apt install -y neofetch git vim virtualbox steam feh
+```
+
+- [VSCode](https://code.visualstudio.com/) package (with the dpkg package manager)
+- [Haskell](https://www.haskell.org/ghcup/) package
+- OpenJDK
+
 **VS Code**
 
 extensions:
 ```
-code --install-extension smlombardi.slime
-code --install-extension vscode-icons-team.vscode-icons
-code --install-extension mortim.noc
-code --install-extension ms-python.python
-code --install-extension justusadam.language-haskell
-code --install-extension redhat.java
-code --install-extension ms-vscode.cpptools
-code --install-extension shd101wyy.markdown-preview-enhanced
-code --install-extension yzhang.markdown-all-in-one
+https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/scripts/install_vscode_ext.sh | sh
 ```
 
 config:
@@ -58,14 +67,7 @@ config:
 curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/vscode/settings.json > ~/.config/Code/User/settings.json
 ```
 
-### Packages
-```
-$ apt install -y neofetch git vim wget curl virtualbox steam feh
-```
-
-- [VSCode](https://code.visualstudio.com/) package (with the dpkg package manager)
-- [Haskell](https://www.haskell.org/ghcup/) package
-- OpenJDK
+---
 
 ### VPN
 ```
@@ -74,6 +76,7 @@ $ unzip ULILLE_VPN_ETUDIANT_Linux_v4_2.zip
 $ nmcli connection import type openvpn file ULILLE_VPN_ETU_TCP_v4_Linux.ovpn
 ```
 
+---
 
 ### Shell configuration
 ```
