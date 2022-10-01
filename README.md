@@ -38,7 +38,25 @@ $ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP/workspace0/last-
 $ apt install -y fonts-firacode
 ```
 
-(check the [VSCode](config/vscode/settings.json) configuration)
+**VS Code**
+
+extensions:
+```
+code --install-extension smlombardi.slime
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension mortim.noc
+code --install-extension ms-python.python
+code --install-extension justusadam.language-haskell
+code --install-extension redhat.java
+code --install-extension ms-vscode.cpptools
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension yzhang.markdown-all-in-one
+```
+
+config:
+```
+curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/vscode/settings.json > ~/.config/Code/User/settings.json
+```
 
 ### Packages
 ```
