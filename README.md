@@ -88,6 +88,12 @@ config:
 curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/vscode/settings.json > ~/.config/Code/User/settings.json
 ```
 
+**Python**
+
+```
+$ curl https://bootstrap.pypa.io/get-pip.py | python3
+```
+
 ---
 
 ### VPN
