@@ -105,6 +105,21 @@ $ nmcli connection import type openvpn file ULILLE_VPN_ETU_TCP_v4_Linux.ovpn
 
 ---
 
+### Keyboard shortcuts
+
+Use the official GUI software from Xfce for keyboard settings
+
+| Shortcut  | Description  | Command  |
+|    ---    |     ---      |   ---    |
+| Alt + T  | File explorer  | thunar  |
+| Alt + F  | Web browser  | firefox  |
+| Alt + D  | Instant messaging software | discord
+| Shift + Print  | Screenshot region  | xfce4-screenshooter -r  |
+| Alt + Print  | Screenshot the active window  | xfce4-screenshooter -w  |
+| Ctrl + Print  | Screenshot fullscreen  | xfce4-screenshooter -f  |
+
+---
+
 ### Shell configuration
 ```
 $ cd ~
