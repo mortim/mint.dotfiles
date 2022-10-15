@@ -80,7 +80,7 @@ $ apt install -y neofetch git vim virtualbox steam feh g++
 
 extensions:
 ```
-curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/scripts/install_vscode_ext.sh | sh
+curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/bin/install_vscode_ext | sh
 ```
 
 config:
@@ -125,14 +125,10 @@ Use the official GUI software from Xfce for keyboard settings
 $ cd ~
 ```
 
-```
-$ echo -e "\n\nexport PATH=$HOME/.local/bin:$PATH" >> .bashrc
-```
-
 **iJava**
 
 ```
-$ wget https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/lib/program.jar -P Workspace/iut/lib
+$ wget https://raw.githubusercontent.com/mortim/mint.dotfiles/master/lib/program.jar -P Workspace/iut/lib
 $ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/bash/.bash_aliases > .bash_aliases
 $ source .bash_aliases
 ```
