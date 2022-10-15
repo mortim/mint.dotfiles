@@ -38,7 +38,7 @@ $ xfconf-query -c xsettings -p /Net/IconThemeName -s ePapirus-Dark
 **Terminal**
 
 ```
-$ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/xfce4-terminal/terminalrc > ~/.config/xfce4/terminalrc
+$ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/xfce4-terminal/terminalrc > ~/.config/xfce4/terminal/terminalrc
 ```
 **Panel**
 
@@ -57,7 +57,7 @@ Wallpaper link [here](https://www.xfce-look.org/p/1483687)
 
 ```
 $ mv 'XFCE 94 With Logo.png' ~/Pictures/wallpaper.png
-$ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor$(xrandr --listmonitors | grep "+" | awk {'print $4'})/workspace0/last-image -s ~/Pictures/wallpaper.png
+$ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor$(xrandr --listmonitors | grep "+" | cut -d " " -f 6)/workspace0/last-image -s ~/Pictures/wallpaper.png
 ```
 
 **Font**
@@ -69,26 +69,26 @@ $ apt install -y fonts-firacode
 
 ### Packages
 ```
-$ apt install -y neofetch git vim virtualbox steam feh g++
+$ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++
 ```
 
 - [VSCode](https://code.visualstudio.com/) package (with the dpkg package manager)
 - [Haskell](https://www.haskell.org/ghcup/) package
-- OpenJDK
-
+  
 **VS Code**
 
 extensions:
 ```
-curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/bin/install_vscode_ext | sh
+$ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/bin/install_vscode_ext | sh
 ```
 
 config:
 ```
-curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/vscode/settings.json > ~/.config/Code/User/settings.json
+$ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/vscode/settings.json > ~/.config/Code/User/settings.json
 ```
 
 **Python**
+(check the **Bash** configuration to export ~/.local/bin directory)
 
 ```
 $ curl https://bootstrap.pypa.io/get-pip.py | python3
@@ -99,8 +99,9 @@ $ curl https://bootstrap.pypa.io/get-pip.py | python3
 ### VPN
 ```
 $ wget https://infotuto.univ-lille.fr/fileadmin/user_upload/infotuto/images/DSI/Fichiers_telechargeables/Clients_VPN/ULILLE_VPN_ETUDIANT_Linux_v4_2.zip
-$ unzip ULILLE_VPN_ETUDIANT_Linux_v4_2.zip
-$ nmcli connection import type openvpn file ULILLE_VPN_ETU_TCP_v4_Linux.ovpn
+$ unzip ULILLE_VPN_ETUDIANT_Linux_v4_2.zip -d vpn
+$ nmcli connection import type openvpn file vpn/ULILLE_VPN_ETU_TCP_v4_Linux.ovpn
+$ rm -r vpn ULILLE_VPN_ETUDIANT_Linux_v4_2.zip
 ```
 
 ---
@@ -123,6 +124,13 @@ Use the official GUI software from Xfce for keyboard settings
 ### Shell configuration
 ```
 $ cd ~
+```
+
+**Bash**
+
+```
+$ echo -e '\nexport PATH=~/.local/bin:$PATH' >> .bashrc
+$ source .bashrc
 ```
 
 **iJava**
