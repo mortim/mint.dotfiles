@@ -94,6 +94,14 @@ $ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/vsco
 $ curl https://bootstrap.pypa.io/get-pip.py | python3
 ```
 
+**Virtualbox**
+(download Windows VM [here](https://nextcloud.univ-lille.fr/index.php/s/8JN6FYEJo35H4nE))
+
+```
+$ wget https://nextcloud.univ-lille.fr/index.php/s/8JN6FYEJo35H4nE/download/Windows%2010.ova
+$ VBoxManage import 'Windows 10.ova'
+```
+
 ---
 
 ### VPN
