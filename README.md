@@ -79,7 +79,7 @@ $ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++ filezi
 
 extensions:
 ```
-$ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/bin/install_vscode_ext | sh
+$ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/scripts/install_vscode_ext | sh
 ```
 
 config:
@@ -101,6 +101,7 @@ Download Windows VM [here](https://nextcloud.univ-lille.fr/index.php/s/8JN6FYEJo
 ```
 $ wget https://nextcloud.univ-lille.fr/index.php/s/8JN6FYEJo35H4nE/download/Windows%2010.ova
 $ VBoxManage import 'Windows 10.ova'
+rm 'Windows 10.ova'
 ```
 
 ---
@@ -115,10 +116,13 @@ $ rm -r vpn ULILLE_VPN_ETUDIANT_Linux_v4_2.zip
 
 **Internet access (proxy)**
 ```
-cd ~
-echo -e '\nexport http_proxy=http://cache.univ-lille.fr:3128\nexport https_proxy=$http_proxy' >> .bashrc
-source .bashrc
+$ cd ~
+$ wget https://raw.githubusercontent.com/mortim/mint.dotfiles/master/scripts/activate_proxy
+$ mkdir -p Programs/scripts
+$ mv activate_proxy Programs/scripts
 ```
+
+(check [Shell Configuration](#shell-configuration) section to set the 'activate_proxy' script as alias)
 
 ---
 

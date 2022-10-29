@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export http_proxy=http://cache.univ-lille.fr:3128
+export https_proxy=$http_proxy
