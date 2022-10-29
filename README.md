@@ -88,14 +88,15 @@ $ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/vsco
 ```
 
 **Python**
-(check the **Bash** configuration to export ~/.local/bin directory)
+(check the **[Bash](#shell-configuration)** configuration to export ~/.local/bin directory)
 
 ```
 $ curl https://bootstrap.pypa.io/get-pip.py | python3
 ```
 
-**Virtualbox**
-(download Windows VM [here](https://nextcloud.univ-lille.fr/index.php/s/8JN6FYEJo35H4nE))
+**Virtualbox** (for school)
+
+Download Windows VM [here](https://nextcloud.univ-lille.fr/index.php/s/8JN6FYEJo35H4nE)
 
 ```
 $ wget https://nextcloud.univ-lille.fr/index.php/s/8JN6FYEJo35H4nE/download/Windows%2010.ova
@@ -104,12 +105,19 @@ $ VBoxManage import 'Windows 10.ova'
 
 ---
 
-### VPN
+### VPN (for school)
 ```
 $ wget https://infotuto.univ-lille.fr/fileadmin/user_upload/infotuto/images/DSI/Fichiers_telechargeables/Clients_VPN/ULILLE_VPN_ETUDIANT_Linux_v4_2.zip
 $ unzip ULILLE_VPN_ETUDIANT_Linux_v4_2.zip -d vpn
 $ nmcli connection import type openvpn file vpn/ULILLE_VPN_ETU_TCP_v4_Linux.ovpn
 $ rm -r vpn ULILLE_VPN_ETUDIANT_Linux_v4_2.zip
+```
+
+**Internet access (proxy)**
+```
+cd ~
+echo -e '\nexport http_proxy=http://cache.univ-lille.fr:3128\nexport https_proxy=$http_proxy' >> .bashrc
+source .bashrc
 ```
 
 ---
@@ -142,6 +150,7 @@ $ source .bashrc
 ```
 
 **iJava**
+(for school)
 
 ```
 $ wget https://raw.githubusercontent.com/mortim/mint.dotfiles/master/lib/program.jar -P Workspace/iut/lib
