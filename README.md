@@ -101,7 +101,7 @@ Download Windows VM [here](https://nextcloud.univ-lille.fr/index.php/s/8JN6FYEJo
 ```
 $ wget https://nextcloud.univ-lille.fr/index.php/s/8JN6FYEJo35H4nE/download/Windows%2010.ova
 $ VBoxManage import 'Windows 10.ova'
-rm 'Windows 10.ova'
+$ rm 'Windows 10.ova'
 ```
 
 ---
@@ -144,6 +144,12 @@ Use the official GUI software from Xfce for keyboard settings
 ### Shell configuration
 ```
 $ cd ~
+```
+
+**Workspace directory**
+
+```
+$ mkdir -p Workspace/{iut,lab,projects}
 ```
 
 **Bash**
