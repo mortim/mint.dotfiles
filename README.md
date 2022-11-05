@@ -96,10 +96,10 @@ $ curl https://bootstrap.pypa.io/get-pip.py | python3
 
 **Virtualbox** (for school)
 
-Download Windows VM [here](https://nextcloud.univ-lille.fr/index.php/s/8JN6FYEJo35H4nE)
+Download Windows VM [here](https://nextcloud.univ-lille.fr/index.php/s/WBdSc8KG7CBidjT)
 
 ```
-$ wget https://nextcloud.univ-lille.fr/index.php/s/8JN6FYEJo35H4nE/download/Windows%2010.ova
+$ wget https://nextcloud.univ-lille.fr/index.php/s/WBdSc8KG7CBidjT/download/Windows%2010.ova
 $ VBoxManage import 'Windows 10.ova'
 $ rm 'Windows 10.ova'
 ```
