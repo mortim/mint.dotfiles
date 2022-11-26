@@ -98,6 +98,7 @@ $ curl https://bootstrap.pypa.io/get-pip.py | python3
 
 Download Windows VM [here](https://nextcloud.univ-lille.fr/index.php/s/WBdSc8KG7CBidjT)
 
+(For [Microsoft Office](https://github.com/massgravel/Microsoft-Activation-Scripts))
 ```
 $ wget https://nextcloud.univ-lille.fr/index.php/s/WBdSc8KG7CBidjT/download/Windows%2010.ova
 $ VBoxManage import 'Windows 10.ova'
