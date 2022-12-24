@@ -74,6 +74,7 @@ $ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++ filezi
 
 - [VSCode](https://code.visualstudio.com/) package (with the dpkg package manager)
 - [Haskell](https://www.haskell.org/ghcup/) package
+- [Docker](https://docs.docker.com/engine/install/ubuntu/) package
   
 **VS Code**
 
