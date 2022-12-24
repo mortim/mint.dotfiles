@@ -72,6 +72,7 @@ $ apt install -y fonts-firacode
 $ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++ filezilla gparted
 ```
 
+- [Discord](https://discord.com/)
 - [VSCode](https://code.visualstudio.com/) package (with the dpkg package manager)
 - [Haskell](https://www.haskell.org/ghcup/) package
 - [Docker](https://docs.docker.com/engine/install/ubuntu/) package
