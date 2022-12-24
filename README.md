@@ -1,8 +1,8 @@
 # mint.dotfiles
 
-![example](assets/example.png)
-
 mint + xfce4
+
+![example](assets/example.png)
 
 **Pre-requisites**
 ```
@@ -104,11 +104,17 @@ $ curl https://bootstrap.pypa.io/get-pip.py | python3
 
 **Virtualbox** (for school)
 
-Download Windows VM [here](https://nextcloud.univ-lille.fr/index.php/s/WBdSc8KG7CBidjT)
+Download Windows 10 VM [here](https://nextcloud.univ-lille.fr/index.php/s/JkGsRDss9Sk972d)
 
-(For [Microsoft Office](https://github.com/massgravel/Microsoft-Activation-Scripts))
+username: **user**,
+password: **user**
+
+With:
+- Microsoft Office ([link](https://github.com/massgravel/Microsoft-Activation-Scripts))
+- PowerAMC
+
 ```
-$ wget https://nextcloud.univ-lille.fr/index.php/s/WBdSc8KG7CBidjT/download/Windows%2010.ova
+$ wget https://nextcloud.univ-lille.fr/index.php/s/JkGsRDss9Sk972d/download/Windows%2010.ova
 $ VBoxManage import 'Windows 10.ova'
 $ rm 'Windows 10.ova'
 ```
