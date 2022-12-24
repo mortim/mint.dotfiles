@@ -120,6 +120,7 @@ $ rm -r vpn ULILLE_VPN_ETUDIANT_Linux_v4_2.zip
 ```
 $ cd ~
 $ wget https://raw.githubusercontent.com/mortim/mint.dotfiles/master/scripts/activate_proxy
+$ chmod u+x activate_proxy
 $ mkdir -p Programs/scripts
 $ mv activate_proxy Programs/scripts
 ```
@@ -138,7 +139,7 @@ Use the official GUI software from Xfce for keyboard settings
 | Alt + F  | Web browser  | firefox  |
 | Alt + D  | Instant messaging software | discord
 | Shift + Print  | Screenshot region  | xfce4-screenshooter -r  |
-| Alt + Print  | Screenshot the active window  | xfce4-screenshooter -w  |
+| Alt + Escape  | Screenshot the active window  | xfce4-screenshooter -w  |
 | Ctrl + Print  | Screenshot fullscreen  | xfce4-screenshooter -f  |
 
 ---
