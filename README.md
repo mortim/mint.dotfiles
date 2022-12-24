@@ -69,7 +69,7 @@ $ apt install -y fonts-firacode
 
 ### Packages
 ```
-$ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++ filezilla
+$ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++ filezilla gparted
 ```
 
 - [VSCode](https://code.visualstudio.com/) package (with the dpkg package manager)
