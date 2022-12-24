@@ -1,5 +1,7 @@
 # mint.dotfiles
 
+![example](assets/example.png)
+
 mint + xfce4
 
 **Pre-requisites**
@@ -41,6 +43,10 @@ $ xfconf-query -c xsettings -p /Net/IconThemeName -s ePapirus-Dark
 $ curl https://raw.githubusercontent.com/mortim/mint.dotfiles/master/config/xfce4-terminal/terminalrc > ~/.config/xfce4/terminal/terminalrc
 ```
 **Panel**
+
+```
+$ apt install xfce4-appmenu-plugin
+```
 
 ```
 $ xfconf-query -c xfce4-panel -p /panels/panel-1/enter-opacity -s 95
