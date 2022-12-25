@@ -1,10 +1,26 @@
 {
-    "workbench.colorTheme": "Slime",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontFamily": "Fira Code",
+    // General
+    "workbench.startupEditor": "none",
     "vsicons.dontShowNewVersionMessage": true,
     "editor.minimap.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
+
+    // Terminal
     "terminal.integrated.fontFamily": "monospace",
-    "editor.fontLigatures": false
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+
+    // Sidebar
+    "workbench.tree.indent": 20,
+
+    // Code
+    "editor.renderWhitespace": "trailing",
+
+    // Files
+    "files.autoSave": "onFocusChange",
+
+    // Theme
+    "workbench.colorTheme": "Slime",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true
 }
