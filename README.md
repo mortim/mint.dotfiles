@@ -78,11 +78,13 @@ $ apt install -y fonts-firacode
 $ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++ filezilla gparted
 ```
 
-- [Discord](https://discord.com/)
-- [VSCode](https://code.visualstudio.com/) package (with the dpkg package manager)
+- [Discord](https://discord.com/) package
+- [VSCode](https://code.visualstudio.com/) package
 - [Haskell](https://www.haskell.org/ghcup/) package
 - [Docker](https://docs.docker.com/engine/install/ubuntu/) package
-  
+
+**Package configuration**
+
 **VS Code**
 
 extensions:
@@ -103,6 +105,8 @@ $ curl https://bootstrap.pypa.io/get-pip.py | python3
 ```
 
 **Virtualbox** (for school)
+
+**Edit the virtualbox .desktop file to change the default theme:** ``VirtualBox -style cleanlooks``
 
 Download Windows 10 VM [here](https://nextcloud.univ-lille.fr/index.php/s/JkGsRDss9Sk972d)
 
