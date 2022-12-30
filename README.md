@@ -75,7 +75,7 @@ $ apt install -y fonts-firacode
 
 ### Packages
 ```
-$ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++ filezilla gparted
+$ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++ filezilla gparted xournalpp
 ```
 
 - [Discord](https://discord.com/) package
