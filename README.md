@@ -123,6 +123,10 @@ $ VBoxManage import 'Windows 10.ova'
 $ rm 'Windows 10.ova'
 ```
 
+**Xournal++**
+
+Deps: ``apt install texlive-latex-base texlive-latex-extra``
+
 ---
 
 ### VPN (for school)
