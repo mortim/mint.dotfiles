@@ -9,4 +9,5 @@ code --install-extension redhat.java
 code --install-extension ms-vscode.cpptools
 code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension yzhang.markdown-all-in-one
+code --install-extension hall.draw
 code --install-extension icrawl.discord-vscode
