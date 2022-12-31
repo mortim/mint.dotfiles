@@ -75,7 +75,7 @@ $ apt install -y fonts-firacode
 
 ### Packages
 ```
-$ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++ filezilla gparted xournalpp
+$ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++ filezilla gparted
 ```
 
 - [Discord](https://discord.com/) package
@@ -122,10 +122,6 @@ $ wget https://nextcloud.univ-lille.fr/index.php/s/JkGsRDss9Sk972d/download/Wind
 $ VBoxManage import 'Windows 10.ova'
 $ rm 'Windows 10.ova'
 ```
-
-**Xournal++**
-
-Deps: ``apt install texlive-latex-base texlive-latex-extra``
 
 ---
 
