@@ -82,6 +82,7 @@ $ apt install -y neofetch git vim openjdk-11-jdk virtualbox steam feh g++ filezi
 - [VSCode](https://code.visualstudio.com/) package
 - [Haskell](https://www.haskell.org/ghcup/) package
 - [Docker](https://docs.docker.com/engine/install/ubuntu/) package
+- [Prince](https://www.princexml.com/download/)
 
 **Package configuration**
 
